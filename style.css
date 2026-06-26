@@ -30,12 +30,11 @@
     --glass-bg: rgba(28, 28, 30, 0.75);
     --glass-border: rgba(255, 255, 255, 0.08);
     
-    /* Typography */
     --font-serif: "Cormorant Garamond", serif;
-    --font-sans: "Tenor Sans", sans-serif;
+    --font-sans: "Montserrat", sans-serif;
     --font-heading: var(--font-serif);
     --font-body: var(--font-sans);
-    --font-cursive: "Pinyon Script", cursive;
+    --font-cursive: var(--font-sans);
     
     /* Layout & Transitions */
     --container-width: 1240px;
@@ -126,13 +125,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-subtitle, .banner-subtitle {
     display: block;
-    font-family: var(--font-cursive);
-    font-size: 38px;
-    font-weight: 400;
-    letter-spacing: normal;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
     color: var(--color-gold);
-    margin-bottom: -6px;
-    text-transform: none;
+    margin-bottom: 10px;
+    text-transform: uppercase;
     background: none;
     padding: 0;
     border: none;
@@ -583,13 +582,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-subtitle {
     display: block;
-    font-family: var(--font-cursive);
-    font-size: 48px;
-    font-weight: 400;
-    letter-spacing: normal;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
     color: var(--color-gold);
-    margin-bottom: -10px;
-    text-transform: none;
+    margin-bottom: 12px;
+    text-transform: uppercase;
 }
 
 .hero-title {
