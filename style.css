@@ -31,7 +31,7 @@
     --glass-border: rgba(255, 255, 255, 0.08);
     
     --font-serif: "Playfair Display", serif;
-    --font-sans: "Plus Jakarta Sans", sans-serif;
+    --font-sans: "Lora", serif;
     --font-heading: var(--font-serif);
     --font-body: var(--font-sans);
     --font-cursive: var(--font-serif);
