@@ -32,7 +32,7 @@
     
     --font-serif: "Playfair Display", serif;
     --font-sans: "Plus Jakarta Sans", sans-serif;
-    --font-heading: "Tenor Sans", sans-serif;
+    --font-heading: var(--font-serif);
     --font-body: var(--font-sans);
     --font-cursive: var(--font-serif);
     
