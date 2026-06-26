@@ -304,5 +304,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         statsObserver.observe(statsSection);
     }
+
+    /* --------------------------------------------------------------------------
+       9. GOOGLE MAP SCROLL-ZOOM HELPER
+       -------------------------------------------------------------------------- */
+    const mapContainer = document.querySelector('.contact-map-container');
+    if (mapContainer) {
+        const iframe = mapContainer.querySelector('iframe');
+        if (iframe) {
+            mapContainer.addEventListener('click', () => {
+                iframe.style.pointerEvents = 'auto';
+            });
+            mapContainer.addEventListener('mouseleave', () => {
+                iframe.style.pointerEvents = 'none';
+            });
+        }
+    }
 });
 
