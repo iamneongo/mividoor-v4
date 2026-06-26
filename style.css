@@ -32,9 +32,9 @@
     
     --font-serif: "Playfair Display", serif;
     --font-sans: "Plus Jakarta Sans", sans-serif;
-    --font-heading: var(--font-serif);
+    --font-heading: "Tenor Sans", sans-serif;
     --font-body: var(--font-sans);
-    --font-cursive: "Pinyon Script", cursive;
+    --font-cursive: var(--font-serif);
     
     /* Layout & Transitions */
     --container-width: 1240px;
@@ -1003,6 +1003,7 @@ h1, h2, h3, h4, h5, h6 {
 .banner-subtitle {
     display: block;
     font-family: var(--font-cursive);
+    font-style: italic;
     font-size: 38px;
     font-weight: 400;
     letter-spacing: normal;
