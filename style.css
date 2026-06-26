@@ -2046,10 +2046,25 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.5;
 }
 /* Split Layout Overrides for About Page */
-.section-tech-detail .section-split-layout,
-.section-warranty .section-split-layout {
-    grid-template-columns: 1.25fr 1fr;
-    gap: 60px;
+@media (min-width: 992px) {
+    .section-tech-detail .section-split-layout,
+    .section-warranty .section-split-layout {
+        grid-template-columns: 1.25fr 1fr;
+        gap: 60px;
+    }
+
+    .section-tech-detail .section-split-layout .section-header-left,
+    .section-warranty .section-split-layout .section-header-left {
+        position: relative;
+        top: auto;
+    }
+
+    .section-tech-detail .tech-visual,
+    .section-warranty .certificate-visual {
+        position: sticky;
+        top: 120px;
+        align-self: start;
+    }
 }
 
 .warranty-badges-grid {
