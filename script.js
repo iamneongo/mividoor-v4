@@ -249,4 +249,60 @@ document.addEventListener('DOMContentLoaded', () => {
             imgs[activeIdx].classList.add('active');
         }, 3500); // Cycle every 3.5 seconds
     });
+
+    /* --------------------------------------------------------------------------
+       8. STATS COUNTER ANIMATION
+       -------------------------------------------------------------------------- */
+    const statsSection = document.querySelector('.stats-section');
+    const statNumbers = document.querySelectorAll('.stat-number');
+
+    if (statsSection && statNumbers.length > 0) {
+        const animateStats = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    statNumbers.forEach(stat => {
+                        const target = parseInt(stat.getAttribute('data-target'));
+                        const suffix = stat.getAttribute('data-suffix') || '';
+                        const duration = 2000; // 2 seconds animation
+                        const startTime = performance.now();
+
+                        const updateCount = (currentTime) => {
+                            const elapsedTime = currentTime - startTime;
+                            if (elapsedTime >= duration) {
+                                // Final value formatting
+                                if (target >= 1000) {
+                                    stat.textContent = target.toLocaleString('vi-VN') + suffix;
+                                } else {
+                                    stat.textContent = target + suffix;
+                                }
+                            } else {
+                                const progress = elapsedTime / duration;
+                                // Ease out cubic for smoother slow down
+                                const easeProgress = 1 - Math.pow(1 - progress, 3);
+                                const currentValue = Math.floor(easeProgress * target);
+                                
+                                if (currentValue >= 1000) {
+                                    stat.textContent = currentValue.toLocaleString('vi-VN') + suffix;
+                                } else {
+                                    stat.textContent = currentValue + suffix;
+                                }
+                                requestAnimationFrame(updateCount);
+                            }
+                        };
+                        requestAnimationFrame(updateCount);
+                    });
+                    
+                    observer.unobserve(statsSection);
+                }
+            });
+        };
+
+        const statsObserver = new IntersectionObserver(animateStats, {
+            root: null,
+            threshold: 0.2
+        });
+
+        statsObserver.observe(statsSection);
+    }
 });
+
