@@ -2178,3 +2178,91 @@ h1, h2, h3, h4, h5, h6 {
         padding: 30px 24px;
     }
 }
+
+/* ==========================================================================
+   PRODUCTS CATALOG & DYNAMIC PRODUCT DETAIL STYLING
+   ========================================================================== */
+
+/* Catalog page filters */
+.catalog-filters {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.catalog-filter-btn {
+    padding: 10px 24px;
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: var(--color-primary);
+    border: 1px solid var(--color-border-light);
+    border-radius: 9999px;
+    background-color: transparent;
+    transition: var(--transition-fast-premium);
+    text-transform: uppercase;
+}
+.catalog-filter-btn.active, .catalog-filter-btn:hover {
+    background-color: var(--color-gold);
+    border-color: var(--color-gold);
+    color: #FFFFFF;
+}
+
+/* Catalog page grid */
+.products-catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.product-grid-item-container {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Detail page split layout */
+.detail-split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* Swatches & Gallery items */
+.thumb-item {
+    transition: var(--transition-fast-premium);
+}
+.thumb-item:hover {
+    border-color: var(--color-gold) !important;
+    transform: translateY(-2px);
+}
+.color-swatch-btn:hover, .color-swatch-btn.active {
+    transform: scale(1.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Detail responsive adjustments */
+@media (max-width: 991px) {
+    .products-catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .detail-split-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .products-catalog-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .catalog-filters {
+        gap: 10px;
+    }
+    .catalog-filter-btn {
+        padding: 8px 18px;
+        font-size: 10px;
+    }
+}
+
