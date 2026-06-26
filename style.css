@@ -30,11 +30,11 @@
     --glass-bg: rgba(28, 28, 30, 0.75);
     --glass-border: rgba(255, 255, 255, 0.08);
     
-    --font-serif: "Cormorant Garamond", serif;
-    --font-sans: "Montserrat", sans-serif;
+    --font-serif: "Playfair Display", serif;
+    --font-sans: "Plus Jakarta Sans", sans-serif;
     --font-heading: var(--font-serif);
     --font-body: var(--font-sans);
-    --font-cursive: var(--font-sans);
+    --font-cursive: "Pinyon Script", cursive;
     
     /* Layout & Transitions */
     --container-width: 1240px;
