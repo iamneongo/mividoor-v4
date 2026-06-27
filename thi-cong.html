@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hướng dẫn thi công cửa composite Mividoor theo từng bước, từ đo ô chờ, lắp khung bao, treo cánh đến hoàn thiện tại công trình.">
+    <title>Hướng dẫn thi công | Mividoor composite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=4.3">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo_new.png" alt="MIVIDOOR Logo" class="logo-image" style="width: auto; display: block;">
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">TRANG CHỦ</a></li>
+                    <li><a href="about.html" class="nav-link">GIỚI THIỆU</a></li>
+                    <li class="dropdown">
+                        <a href="products.html" class="nav-link dropdown-toggle">
+                            SẢN PHẨM
+                            <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product-detail.html?id=cua-phang">Cửa Phẳng</a></li>
+                            <li><a href="product-detail.html?id=cua-nep-nhom">Cửa Nẹp Nhôm Inox</a></li>
+                            <li><a href="product-detail.html?id=cua-phao-chi">Cửa Phào Chỉ Nổi</a></li>
+                            <li><a href="product-detail.html?id=cua-lua">Cửa Lùa Composite</a></li>
+                            <li><a href="product-detail.html?id=cua-vom">Cửa Vòm Composite</a></li>
+                            <li><a href="product-detail.html?id=cua-soi-huynh">Cửa Soi Huỳnh</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="thi-cong.html" class="nav-link active">HƯỚNG DẪN THI CÔNG</a></li>
+                    <li><a href="https://mivicomposite.vn/catalogue/" class="nav-link" target="_blank">CATALOGUE</a></li>
+                    <li><a href="news.html" class="nav-link">TIN TỨC</a></li>
+                    <li><a href="#contact" class="nav-link">LIÊN HỆ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="action-btn search-toggle" aria-label="Tìm kiếm">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
+                <button class="action-btn hamburger-menu" aria-label="Menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="search-overlay">
+            <div class="container search-container">
+                <input type="text" placeholder="Tìm kiếm bài viết, mẫu cửa..." class="search-input">
+                <button class="search-close">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-drawer">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">TRANG CHỦ</a></li>
+            <li><a href="about.html" class="mobile-nav-link">GIỚI THIỆU</a></li>
+            <li class="mobile-dropdown">
+                <div class="mobile-dropdown-header">
+                    <a href="products.html" class="mobile-nav-link">SẢN PHẨM</a>
+                    <button class="mobile-dropdown-toggle">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                </div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="product-detail.html?id=cua-phang">Cửa Phẳng</a></li>
+                    <li><a href="product-detail.html?id=cua-nep-nhom">Cửa Nẹp Nhôm Inox</a></li>
+                    <li><a href="product-detail.html?id=cua-phao-chi">Cửa Phào Chỉ Nổi</a></li>
+                    <li><a href="product-detail.html?id=cua-lua">Cửa Lùa Composite</a></li>
+                    <li><a href="product-detail.html?id=cua-vom">Cửa Vòm Composite</a></li>
+                    <li><a href="product-detail.html?id=cua-soi-huynh">Cửa Soi Huỳnh</a></li>
+                    <li><a href="product-detail.html?id=cua-o-kinh">Cửa Ô Kính</a></li>
+                    <li><a href="product-detail.html?id=cua-o-la-sach">Cửa Ô Lá Sách</a></li>
+                    <li><a href="product-detail.html?id=cua-o-fix">Cửa Ô Fix</a></li>
+                </ul>
+            </li>
+            <li><a href="thi-cong.html" class="mobile-nav-link active">HƯỚNG DẪN THI CÔNG</a></li>
+            <li><a href="https://mivicomposite.vn/catalogue/" class="mobile-nav-link" target="_blank">CATALOGUE</a></li>
+            <li><a href="news.html" class="mobile-nav-link">TIN TỨC</a></li>
+            <li><a href="#contact" class="mobile-nav-link">LIÊN HỆ</a></li>
+        </ul>
+    </div>
+    <div class="mobile-drawer-overlay"></div>
+
+    <main>
+        <section class="about-hero guide-hero" style="background-image: linear-gradient(to right, rgba(18, 18, 18, 0.88) 26%, rgba(18, 18, 18, 0.55) 60%, rgba(18, 18, 18, 0.28) 100%), url('assets/door_composite.png');">
+            <div class="container hero-content-container">
+                <div class="hero-content scroll-reveal">
+                    <span class="hero-subtitle">Hướng Dẫn Thi Công</span>
+                    <h1 class="hero-title">HƯỚNG DẪN THI CÔNG<br>CỬA COMPOSITE</h1>
+                    <p class="hero-description">Theo dõi đầy đủ quy trình đo ô chờ, lắp khung bao, treo cánh và hoàn thiện bộ cửa composite Mividoor với hình ảnh thực tế rõ ràng, dễ áp dụng cho đội ngũ thi công tại công trình.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="guide">
+            <div class="container">
+                <article class="guide-source-article scroll-reveal">
+                    <div class="guide-source-header">
+                        <span class="section-subtitle">Hướng Dẫn Thi Công</span>
+                        <h2 class="section-title">HƯỚNG DẪN THI CÔNG CỬA COMPOSITE</h2>
+                        <p class="section-description">Theo dõi đầy đủ quy trình đo ô chờ, lắp khung bao, treo cánh và hoàn thiện bộ cửa composite Mividoor với hình ảnh thực tế rõ ràng, dễ áp dụng cho đội ngũ thi công tại công trình.</p>
+                    </div>
+
+                    <p class="guide-source-text">Cửa gỗ nhựa composite hiện đang là một trong những sản phẩm cửa nội thất được ưa chuộng hiện nay. So với chất lượng mà mặt hàng này đem lại như chống nước, chống mối mọt, không cong vênh, co ngót, thì giá của cửa composite lại rất dễ tiếp cận và vừa với túi tiền của người tiêu dùng.</p>
+                    <p class="guide-source-text">Vì thế, trong các công trình lớn nhỏ như nhà ở dân dụng, trường học, bệnh viện và nhiều nơi khác, loại cửa composite này đã được sử dụng khá rộng rãi. Điểm sáng giá của vật liệu cấu thành một chiếc cửa composite bền đẹp nằm ở sự kết hợp giữa bột đá, bột gỗ và hạt nhựa, trải qua nhiều quá trình xử lý và gia cố để tạo ra phôi cửa dày dặn và bền bỉ.</p>
+
+                    <div class="guide-source-gallery guide-source-gallery--three">
+                        <figure>
+                            <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/intro-01.jpg" alt="Hướng dẫn thi công cửa composite" class="guide-source-img">
+                            <figcaption>Hướng dẫn thi công cửa composite</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/intro-02.jpg" alt="Cửa composite Mividoor tại công trình" class="guide-source-img">
+                            <figcaption>Cửa composite Mividoor tại công trình</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/intro-03.jpg" alt="Cửa composite Mividoor trong quá trình thi công thực tế" class="guide-source-img">
+                            <figcaption>Cửa composite Mividoor trong quá trình thi công thực tế</figcaption>
+                        </figure>
+                    </div>
+
+                    <p class="guide-source-text">Thi công cửa composite cũng được phát triển và hiện đại hóa theo từng giai đoạn của thị trường để có thể phù hợp hơn với đại đa số đội ngũ thi công. Ngoài ra, cửa composite cũng là loại cửa lắp ráp có quy trình dễ dàng thực hiện nhất trong các loại cửa hiện hành hiện nay. Mỗi cơ sở sản xuất hoặc kinh doanh loại cửa này đều có những cách thức tối ưu riêng biệt để thi công.</p>
+
+                    <h3 class="guide-section-title">Hướng dẫn chi tiết các bước thực hiện lắp đặt cửa composite Mividoor</h3>
+                    <p class="guide-source-text">Sau đây Mividoor chia sẻ quá trình lắp đặt một bộ cửa composite cơ bản nhất. Các bước dưới đây không bắt buộc theo một quy chuẩn cố định, tùy mỗi cơ sở và tay nghề đội ngũ lắp đặt có thể có những cách riêng khác nhau để cải thiện độ ổn định, tính chắc chắn và thời gian thi công cho một bộ cửa.</p>
+
+                    <section class="guide-step-block" id="step-1">
+                        <h4 class="guide-step-heading">Bước 1. Đo và cắt khung bao theo kích thước ô chờ</h4>
+                        <p class="guide-source-text">Đầu tiên trước khi lắp đặt cửa composite Mividoor thì chúng ta cần đo và kiểm tra lại kích thước ô chờ nhằm đảm bảo tính chuẩn xác trước khi thao tác vào những phụ kiện của cửa. Tiến hành đo chiều dài, chiều rộng và độ dày của tường sau đó so sánh lại với thông số bộ cửa xem có phù hợp tương ứng hay không. Nếu đã tương ứng với nhau thì bắt tay vào cắt, điều chỉnh độ dài của khung bao bằng máy cắt.</p>
+                        <div class="guide-source-gallery guide-source-gallery--two">
+                            <figure>
+                                <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/step-01-cut-frame.jpg" alt="Đo và cắt khung bao theo kích thước ô chờ" class="guide-source-img">
+                                <figcaption>Đo và cắt khung bao theo kích thước ô chờ</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/step-01-frame-detail.jpg" alt="Khung bao cửa composite được cắt góc 45 độ bằng máy" class="guide-source-img">
+                                <figcaption>Khung bao được tinh chỉnh và cắt góc 45 độ bằng máy ở mỗi đầu.</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <section class="guide-step-block" id="step-2">
+                        <h4 class="guide-step-heading">Bước 2. Kết nối khung bao bằng pát sắt chữ V thông dụng</h4>
+                        <p class="guide-source-text">Pát chữ V là một miếng sắt nhỏ có công dụng cố định các mặt ghép nối góc 45 độ của khung bao khi kết nối lại với nhau, tạo cho khung bao tính chắc chắn và không bị rời rạc trong thời gian lắp đặt. Pát cố định thường có nhiều loại và nhiều chất liệu tùy mỗi nơi, nhưng đối với Mividoor thì pát chữ V bằng sắt là lựa chọn tối ưu nhất về độ bền, tính ổn định theo thời gian và giá thành.</p>
+                        <div class="guide-source-gallery guide-source-gallery--two">
+                            <figure>
+                                <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/step-02-v-bracket.jpg" alt="Pát sắt chữ V gồm 4 lỗ ốc" class="guide-source-img">
+                                <figcaption>Pát sắt chữ V gồm 4 lỗ ốc.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/step-02-join-screw.jpg" alt="Kết nối pát chữ V với khung bao bằng vít" class="guide-source-img">
+                                <figcaption>Kết nối pát chữ V với khung bao bằng vít được Mividoor chuẩn bị sẵn trong mỗi bộ cửa.</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <section class="guide-step-block" id="step-3">
+                        <h4 class="guide-step-heading">Bước 3. Khoan tường và lắp pát kết nối tường với khung bao</h4>
+                        <p class="guide-source-text">Sau khi hoàn thiện khâu kết nối các khung bao lại với nhau, chúng ta sẽ quay trở lại với ô chờ tường để thao tác khoan lỗ và cố định pát sắt chữ U vào tường để gắn khung bao. Mỗi ô chờ tường thông thường sẽ được định vị tầm 6 pát chữ U mỗi bên, chia đều để có thể phân bố đủ lực khi treo cả cánh cửa lên.</p>
+                        <p class="guide-source-text">Sau khi chia đều và đánh dấu vị trí của pát sắt thì trên mỗi vị trí đánh dấu chúng ta sẽ khoan 2 lỗ thay vì 1 lỗ để gắn pát sắt, tránh tình trạng pát sắt bị xê dịch làm cửa và khung bao lỏng lẻo trong quá trình sử dụng cửa.</p>
+                        <div class="guide-source-gallery guide-source-gallery--two">
+                            <figure>
+                                <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/step-03-drill-wall.jpg" alt="Khoan tường để gắn pát cố định" class="guide-source-img">
+                                <figcaption>Khoan tường để gắn pát cố định.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/step-03-install-plate.jpg" alt="Cố định pát trên tường" class="guide-source-img">
+                                <figcaption>Cố định pát trên tường.</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <section class="guide-step-block" id="step-4">
+                        <h4 class="guide-step-heading">Bước 4. Lên khung bao vào ô tường và kết nối bằng vít thông qua pát sắt</h4>
+                        <p class="guide-source-text">Kế tiếp, dựng khung bao lên ô tường và đặt khung bao nằm trọn trong khu vực các pát sắt sau đó dùng thanh nêm để có thể cố định cũng như điều chỉnh độ hở đều của các phía khung bao sao cho độ hở được bằng nhau. Việc dùng miếng nêm giúp chúng ta điều chỉnh độ hở dễ dàng hơn vì sẽ có những độ dày nhất định để căn chỉnh.</p>
+                        <div class="guide-source-gallery guide-source-gallery--two">
+                            <figure>
+                                <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/step-04-set-frame.jpg" alt="Lên khung bao và sử dụng tấm nêm để canh chỉnh độ hở" class="guide-source-img">
+                                <figcaption>Lên khung bao và sử dụng tấm nêm để canh chỉnh độ hở của khung bao với tường.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/step-04-fix-frame.jpg" alt="Kết nối khung bao với tường bằng vít thông qua pát sắt" class="guide-source-img">
+                                <figcaption>Kết nối khung bao với tường bằng vít thông qua pát sắt.</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <section class="guide-step-block" id="step-5">
+                        <h4 class="guide-step-heading">Bước 5. Bắt bản lề cho cánh cửa</h4>
+                        <p class="guide-source-text">Loại bản lề được Mividoor sử dụng cho cửa composite sẽ là bản lề inox 304 vì chi phí khá rẻ nhưng độ hoàn thiện và chịu lực vô cùng tốt trong tầm giá. Một cánh cửa có thể dùng 3 bản lề cho một bộ cửa có kích thước cơ bản và 5 bản lề với kích thước quá khổ. Việc sử dụng số lượng bản lề có thể tùy vào mong muốn của gia chủ, nhưng chủ yếu là kỹ thuật đo đạc và phân bố vị trí của bản lề trên cánh để có thể chia đều lực và trọng lượng.</p>
+                        <p class="guide-source-text">Mividoor chia sẻ cách đo căn bản nhất cho một bộ 3 bản lề: đầu tiên dựa trên độ dài cánh và mỗi đầu sẽ dời vào 20cm là điểm để đặt và cố định bản lề ở hai đầu trên dưới. Còn 1 bản lề cuối ở giữa thì lấy tổng chiều dài cửa và chia hai sau đó lấy tâm điểm làm vị trí bắt bản lề.</p>
+                        <div class="guide-source-gallery guide-source-gallery--two">
+                            <figure>
+                                <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/step-05-hinge-layout.jpg" alt="Căn vị trí bản lề theo chiều dài cánh cửa" class="guide-source-img">
+                                <figcaption>Căn vị trí bản lề theo chiều dài cánh cửa để phân bổ lực đều hơn.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/step-05-hinge-install.jpg" alt="Bắt vít cố định bản lề với cửa" class="guide-source-img">
+                                <figcaption>Bắt vít cố định bản lề với cửa.</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <section class="guide-step-block" id="step-6">
+                        <h4 class="guide-step-heading">Bước 6. Treo cửa lên khung bao</h4>
+                        <p class="guide-source-text">Những bước cuối cùng của bộ cửa là treo cánh lên khung bao và bắt vít giữa bản lề vào thẳng khung bao. Trước khi bắn vít nên dùng tấm nêm để chêm dưới cánh cửa có độ hở khoảng 3mm để cánh cửa có thể đóng mở một cách mượt mà và trơn tru, tránh tình trạng bị cạ cấn với nền nhà.</p>
+                        <div class="guide-source-gallery guide-source-gallery--two">
+                            <figure>
+                                <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/step-06-shim-door.jpg" alt="Sử dụng miếng nêm khi treo cửa giúp tạo khoảng hở đóng mở mượt mà" class="guide-source-img">
+                                <figcaption>Sử dụng miếng nêm khi treo cửa giúp tạo khoảng hở đóng mở mượt mà.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/step-06-fix-hinge-frame.jpg" alt="Bắt vít bản lề vào khung bao" class="guide-source-img">
+                                <figcaption>Bắt vít bản lề vào khung bao.</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <section class="guide-step-block" id="step-7">
+                        <h4 class="guide-step-heading">Bước 7. Cắt và đóng nẹp hoàn thiện</h4>
+                        <p class="guide-source-text">Bước cuối cùng để hoàn thiện là đóng nẹp trang trí bên ngoài. Thao tác đo và cắt nẹp cũng tương tự như quá trình cắt khung bao, chỉ cần đo đúng độ dài của ô tường và cắt sau đó đóng dần vào và kết nối bằng rãnh khóa giữa thanh nẹp và khung bao.</p>
+                        <div class="guide-source-gallery guide-source-gallery--three">
+                            <figure>
+                                <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/step-07-cut-trim.jpg" alt="Cắt nẹp hoàn thiện" class="guide-source-img">
+                                <figcaption>Cắt nẹp hoàn thiện.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/step-07-rubber-mallet.jpg" alt="Dùng búa cao su đóng nẹp sao cho ăn khớp với rãnh có sẵn trên khung bao" class="guide-source-img">
+                                <figcaption>Dùng búa cao su đóng nẹp sao cho ăn khớp với rãnh có sẵn trên khung bao.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="https://mivicomposite.vn/wp-content/themes/mivi-theme/vanilla-aperture/assets/installation-guide/step-07-finish-trim.jpg" alt="Đóng dần thanh nẹp hai bên và hoàn thiện bộ cửa" class="guide-source-img">
+                                <figcaption>Đóng dần thanh nẹp hai bên và hoàn thiện bộ cửa.</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <section class="guide-step-block" id="step-8">
+                        <h4 class="guide-step-heading">Bước 8. Kiểm tra tổng thể và bàn giao</h4>
+                        <p class="guide-source-text">Hoàn tất các khâu lắp đặt, đội ngũ thợ lắp đặt cần phải kiểm tra lại từ các bước ban đầu xem đã hoàn thiện ăn khớp với nhau hay chưa, kiểm tra độ chắc chắn của bản lề, độ ổn định của khung bao, độ mượt mà khi đóng mở sau đó lắp khóa và bàn giao cho chủ nhà. Quá trình lắp khóa Mividoor sẽ không đề cập đến vì sẽ tùy vào sở thích của mỗi người lựa chọn mẫu khóa phù hợp với phong cách sở thích cũng như phong thủy cho mỗi cá nhân.</p>
+                    </section>
+
+                    <div class="guide-source-conclusion">
+                        <strong>Mividoor</strong>
+                        <p>Hướng dẫn thi công cửa composite Mividoor được trình bày lại theo nhịp thực tế tại công trình, để thợ thi công dễ theo dõi và chủ nhà dễ hình dung từng bước lắp đặt.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-contact">
+            <div class="container">
+                <div class="contact-main-header scroll-reveal" style="text-align: center; margin-bottom: 60px;">
+                    <span class="section-subtitle">Liên hệ</span>
+                    <h2 class="section-title">GỬI YÊU CẦU CHO CHÚNG TÔI</h2>
+                    <p class="section-description" style="max-width: 600px; margin: 0 auto;">Nhà máy Mividoor luôn sẵn sàng tư vấn mẫu mã, gửi báo giá và giải đáp mọi thắc mắc của quý đối tác đại lý và chủ công trình.</p>
+                </div>
+
+                <div class="contact-form-container scroll-reveal" style="max-width: 650px; margin: 0 auto;">
+                    <form class="luxury-form" data-lead-form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">HỌ VÀ TÊN</label>
+                                <input type="text" id="contactName" placeholder="Nhập họ và tên của bạn" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">SỐ ĐIỆN THOẠI</label>
+                                <input type="tel" id="contactPhone" placeholder="Nhập số điện thoại" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">EMAIL</label>
+                            <input type="email" id="contactEmail" placeholder="Nhập địa chỉ email của bạn" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">LỜI NHẮN / YÊU CẦU</label>
+                            <textarea id="contactMessage" rows="5" placeholder="Nhập nội dung lời nhắn hoặc kích thước cửa cần tư vấn..." required></textarea>
+                        </div>
+                        <p class="form-status" aria-live="polite"></p>
+                        <button type="submit" class="btn btn-primary btn-submit-form" style="width: 100%;">GỬI THÔNG TIN LIÊN HỆ</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/logo_new.png" alt="MIVIDOOR Logo" class="footer-logo-image">
+                </a>
+                <p class="about-text">Mividoor là thương hiệu cửa gỗ nhựa composite chất lượng cao của nhà máy Mividoor, cam kết mang đến những sản phẩm cửa bền, đẹp, cách âm tốt và chống nước tuyệt đối.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/mivicomposite" target="_blank" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="https://zalo.me/0901123456" target="_blank" aria-label="Zalo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H8l-4 4V4z"></path><path d="M8 8h8"></path><path d="M8 12h5"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Liên Kết Nhanh</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="products.html">Sản phẩm</a></li>
+                    <li><a href="thi-cong.html">Hướng dẫn thi công</a></li>
+                    <li><a href="https://mivicomposite.vn/catalogue/" target="_blank">Mividoor catalogue</a></li>
+                    <li><a href="news.html">Tin tức</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Điều Khoản & Chính Sách</h4>
+                <ul class="footer-links">
+                    <li><a href="#contact">Quy trình bảo hành</a></li>
+                    <li><a href="#contact">Chính sách đại lý</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Chứng Nhận Chất Lượng</h4>
+                <div class="certification-badge">
+                    <p>Mivicomposite Vietnam</p>
+                    <span>ISO 9001:2015</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2026 Mivicomposite Vietnam. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

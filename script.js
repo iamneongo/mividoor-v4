@@ -320,5 +320,110 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    /* --------------------------------------------------------------------------
+       10. NEWS PAGINATION
+       -------------------------------------------------------------------------- */
+    const newsGrid = document.querySelector('.news-page-grid');
+
+    if (newsGrid) {
+        const cards = Array.from(newsGrid.querySelectorAll('.news-card'));
+        const pagination = document.querySelector('[data-news-pagination]');
+        const pageButtons = pagination ? pagination.querySelector('.news-pagination-pages') : null;
+        const prevButton = pagination ? pagination.querySelector('[data-page-nav="prev"]') : null;
+        const nextButton = pagination ? pagination.querySelector('[data-page-nav="next"]') : null;
+        const pageSize = 3;
+        const totalPages = Math.max(1, Math.ceil(cards.length / pageSize));
+        let currentPage = 1;
+
+        const renderCards = () => {
+            cards.forEach((card, index) => {
+                const cardPage = Math.floor(index / pageSize) + 1;
+                card.hidden = cardPage !== currentPage;
+            });
+        };
+
+        const renderButtons = () => {
+            if (!pageButtons) return;
+
+            pageButtons.innerHTML = '';
+
+            for (let page = 1; page <= totalPages; page += 1) {
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.className = 'news-pagination-btn';
+                button.textContent = String(page);
+                button.setAttribute('aria-label', `Trang ${page}`);
+
+                if (page === currentPage) {
+                    button.classList.add('is-active');
+                    button.setAttribute('aria-current', 'page');
+                }
+
+                button.addEventListener('click', () => {
+                    if (page !== currentPage) {
+                        currentPage = page;
+                        renderCards();
+                        renderButtons();
+                        renderControls();
+                    }
+                });
+
+                pageButtons.appendChild(button);
+            }
+        };
+
+        const renderControls = () => {
+            if (prevButton) {
+                prevButton.disabled = currentPage === 1;
+            }
+
+            if (nextButton) {
+                nextButton.disabled = currentPage === totalPages;
+            }
+        };
+
+        const goToPage = (page) => {
+            currentPage = Math.min(Math.max(page, 1), totalPages);
+            renderCards();
+            renderButtons();
+            renderControls();
+        };
+
+        if (pagination && totalPages > 1) {
+            pagination.hidden = false;
+
+            if (prevButton) {
+                prevButton.addEventListener('click', () => goToPage(currentPage - 1));
+            }
+
+            if (nextButton) {
+                nextButton.addEventListener('click', () => goToPage(currentPage + 1));
+            }
+
+            goToPage(1);
+        } else if (pagination) {
+            pagination.hidden = true;
+            renderCards();
+        }
+    }
+
+    /* --------------------------------------------------------------------------
+       11. LEAD FORM FEEDBACK
+       -------------------------------------------------------------------------- */
+    const leadForms = document.querySelectorAll('form[data-lead-form]');
+    leadForms.forEach((form) => {
+        const status = form.querySelector('.form-status');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            if (status) {
+                status.textContent = 'Cảm ơn bạn. Mividoor sẽ phản hồi trong giờ làm việc.';
+            }
+
+            form.reset();
+        });
+    });
 });
 
