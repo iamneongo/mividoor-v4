@@ -292,20 +292,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-image {
-    height: 38px;
+    height: 36px;
     width: auto;
     object-fit: contain;
     display: block;
     transition: var(--transition-smooth);
-    background-color: #FFFFFF; /* Sleek white badge background */
-    padding: 2px 8px; /* Very tight padding so the logo stays large */
-    border-radius: 4px; /* Professional rectangular badge with soft corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(1px 0px 0px #FFFFFF) 
+            drop-shadow(-1px 0px 0px #FFFFFF) 
+            drop-shadow(0px 1px 0px #FFFFFF) 
+            drop-shadow(0px -1px 0px #FFFFFF); /* Sharp white outline around letters */
 }
 
 .site-header.scrolled .logo-image {
     height: 30px !important;
-    padding: 2px 6px;
 }
 
 .logo-icon {
@@ -1518,14 +1517,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-logo-image {
-    height: 46px;
+    height: 42px;
     width: auto;
     object-fit: contain;
     display: block;
-    background-color: #FFFFFF; /* Sleek white badge background */
-    padding: 3px 10px; /* Very tight padding so the logo stays large */
-    border-radius: 4px; /* Professional rectangular badge with soft corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(1px 0px 0px #FFFFFF) 
+            drop-shadow(-1px 0px 0px #FFFFFF) 
+            drop-shadow(0px 1px 0px #FFFFFF) 
+            drop-shadow(0px -1px 0px #FFFFFF); /* Sharp white outline around letters */
 }
 
 .about-text {
