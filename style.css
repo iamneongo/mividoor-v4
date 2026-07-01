@@ -470,41 +470,57 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 2px;
 }
 
-/* Search Overlay */
+/* Search Overlay - Premium Integrated Pill style */
 .search-overlay {
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--color-primary);
-    border-top: 1px solid var(--color-border-dark);
-    padding: 20px 0;
-    display: none;
-    z-index: 99;
-    box-shadow: var(--shadow-medium);
-    transform: translateY(-10px);
+    height: 100%;
+    background-color: rgba(18, 18, 18, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 9999px;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
     opacity: 0;
-    transition: var(--transition-smooth);
+    pointer-events: none;
+    transition: opacity 0.3s cubic-bezier(0.32, 0.72, 0, 1), transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+    transform: translateY(-5px) scale(0.99);
 }
 
 .search-overlay.active {
-    display: block;
-    transform: translateY(0);
     opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
 }
 
 .search-container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+    max-width: 100% !important;
+    padding: 0 !important;
 }
 
 .search-input {
-    width: 90%;
+    width: 100%;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 15px;
     padding: 8px 0;
-    border-bottom: 1px solid var(--color-border-dark);
+    border: none;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.15);
+    background: transparent;
+    transition: var(--transition-fast-premium);
+}
+
+.search-input:focus {
+    border-bottom-color: var(--color-gold);
 }
 
 .search-input::placeholder {
@@ -513,11 +529,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .search-close {
     color: #FFFFFF;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-fast);
 }
 
 .search-close svg {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 
 .search-close:hover {
