@@ -292,21 +292,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-image {
-    height: 40px;
+    height: 34px;
     width: auto;
     object-fit: contain;
     display: block;
     transition: var(--transition-smooth);
-    background-color: var(--color-bg-light); /* Premium off-white cream */
-    border: 1px solid rgba(197, 168, 128, 0.35); /* Thin gold border */
-    padding: 3px 12px; /* Thinner padding */
-    border-radius: 9999px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    filter: brightness(0) saturate(100%) invert(73%) sepia(31%) saturate(543%) hue-rotate(332deg) brightness(93%) contrast(86%); /* Luxury Gold Silhouette */
 }
 
 .site-header.scrolled .logo-image {
-    height: 32px !important;
-    padding: 2px 10px;
+    height: 28px !important;
 }
 
 .logo-icon {
@@ -1519,15 +1514,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-logo-image {
-    height: 50px;
+    height: 40px;
     width: auto;
     object-fit: contain;
     display: block;
-    background-color: var(--color-bg-light); /* Premium off-white cream */
-    border: 1px solid rgba(197, 168, 128, 0.35); /* Thin gold border */
-    padding: 5px 16px; /* Thinner padding */
-    border-radius: 9999px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    filter: brightness(0) saturate(100%) invert(73%) sepia(31%) saturate(543%) hue-rotate(332deg) brightness(93%) contrast(86%); /* Luxury Gold Silhouette */
 }
 
 .about-text {
