@@ -292,19 +292,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-image {
-    height: 32px;
+    height: 40px;
     width: auto;
     object-fit: contain;
     display: block;
     transition: var(--transition-smooth);
     background-color: #FFFFFF;
-    padding: 6px 14px;
+    padding: 6px 18px;
     border-radius: 9999px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .site-header.scrolled .logo-image {
-    height: 26px !important;
+    height: 32px !important;
+    padding: 4px 14px;
 }
 
 .logo-icon {
@@ -1517,12 +1518,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-logo-image {
-    height: 32px;
+    height: 50px;
     width: auto;
     object-fit: contain;
     display: block;
     background-color: #FFFFFF;
-    padding: 6px 14px;
+    padding: 8px 20px;
     border-radius: 9999px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
