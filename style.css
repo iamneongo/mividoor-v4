@@ -297,7 +297,7 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: contain;
     display: block;
     transition: var(--transition-smooth);
-    filter: brightness(0) saturate(100%) invert(73%) sepia(31%) saturate(543%) hue-rotate(332deg) brightness(93%) contrast(86%); /* Luxury Gold Silhouette */
+    filter: brightness(0) invert(1); /* Pure White Silhouette */
 }
 
 .site-header.scrolled .logo-image {
@@ -1518,7 +1518,7 @@ h1, h2, h3, h4, h5, h6 {
     width: auto;
     object-fit: contain;
     display: block;
-    filter: brightness(0) saturate(100%) invert(73%) sepia(31%) saturate(543%) hue-rotate(332deg) brightness(93%) contrast(86%); /* Luxury Gold Silhouette */
+    filter: brightness(0) invert(1); /* Pure White Silhouette */
 }
 
 .about-text {
